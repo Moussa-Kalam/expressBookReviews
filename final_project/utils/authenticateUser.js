@@ -1,3 +1,5 @@
+const jwt = require('jsonwebtoken');
+
 function auth(req, res, next) {
   // Check if the user is logged in and has valid access token
   if (req.session.authorization) {
